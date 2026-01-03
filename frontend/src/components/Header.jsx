@@ -2,9 +2,19 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>
-      <h1 className='text-white'>Header</h1>
-    </div>
+    <>
+       <nav className='navbar container pt-3 pb-3 align-item-start'>
+        <a className='navbar-brand text-light' href="">
+          Stock Prediction Portal
+        </a>
+
+        <div>
+          <a className='btn btn-outline-info' href="">Login</a>
+          {/* &nbsp: */}
+          <a className='btn btn-info' href="">Rgister</a>
+        </div>
+      </nav>
+    </>
   )
 }
 
