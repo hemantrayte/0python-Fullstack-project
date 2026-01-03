@@ -1,0 +1,64 @@
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Python / Django
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+ENV/
+env/
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+*.pot
+
+# =========================
+# React / Node
+# =========================
+node_modules/
+dist/
+build/
+.cache/
+.eslintcache
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# =========================
+# Vite
+# =========================
+.vite/
+
+# =========================
+# Testing
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+jest-cache/
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.swo
