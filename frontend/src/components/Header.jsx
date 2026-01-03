@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Header = () => {
   return (
@@ -9,9 +10,9 @@ const Header = () => {
         </a>
 
         <div>
-          <a className='btn btn-outline-info' href="">Login</a>
-          {/* &nbsp: */}
-          <a className='btn btn-info' href="">Rgister</a>
+           <Button text='Login' class="btn-outline-info" />
+          &nbsp:
+          <Button text='Register' class="btn-info" />
         </div>
       </nav>
     </>
