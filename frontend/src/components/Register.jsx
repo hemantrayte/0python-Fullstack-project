@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 
 const Register = () => {
   // const [username, setUsername] = useState('')
@@ -83,7 +85,7 @@ const Register = () => {
 
             {/* button is loading on conditional rendering */}
             {loading ? (
-              <button  type="submit" className='btn btn-info d-block mx-auto' disabled>Please Wait...</button>
+              <button  type="submit" className='btn btn-info d-block mx-auto' disabled><FontAwesomeIcon icon={faSpinner} spin/> Please Wait...</button>
             ) : (
               <button  type="submit" className='btn btn-info d-block mx-auto'>Register</button>
             )}
