@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-// import { AuthContext } from '../AuthProvider'
+import { AuthContext } from '../context/AuthProvider'
 
 const Login = () => {
   const [username, setUsername] = useState('')
@@ -11,7 +11,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
   const [error, setError] = useState('')
-  // const {isLoggedIn, setIsLoggedIn} = useContext(AuthContext)
+  const {isLoggedIn, setIsLoggedIn} = useContext(AuthContext)
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -25,7 +25,7 @@ const Login = () => {
       localStorage.setItem('accessToken', response.data.access)
       localStorage.setItem('refreshToken', response.data.refresh)
       console.log('Login successful');
-      // setIsLoggedIn(true)
+      setIsLoggedIn(true)
       // navigate('/dashboard')
       navigate("/")
     } catch (error) {
