@@ -2,7 +2,7 @@ import {useContext} from 'react'
 import Button from './Button'
 import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../context/AuthProvider'
-// import { AuthContext } from '../AuthProvider'
+
 
 const Header = () => {
   const {isLoggedIn, setIsLoggedIn} = useContext(AuthContext)
